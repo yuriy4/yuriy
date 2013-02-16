@@ -2,10 +2,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Псевдоэлементы</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
-    <body>
-        <div>УРА!</div>
-    </body>
+    <style type="text/css">
+        ul{
+            list-style-type: none;
+        }
+        img#unique{
+            max-width: 200px;
+            max-height: 50px;
+        }
+         P:first-letter {
+    font-family: 'Times New Roman', Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: red; /* Красный цвет текста */
+   }
+   P:first-line{
+       color: blue;
+       
+   }
+        P.new:after {
+            content: " - Прикольно!"; /* Добавляем после текста абзаца */
+
+        }
+        P.new:before{
+            
+            display: inline-block;
+            width: 128px;
+            height: 128px;
+            float:left;
+            background: url("../img/nature.jpg") no-repeat left top; 
+        }
+    </style>
+</head>
+<body>
+    <p class="new">Ловля льва в пустыне с помощью метода золотого сечения.</p>
+    <p>Метод ловли льва простым перебором.</p>
+    <ul>
+        <li>aaaaaa</li>
+        <li>aaaaaa</li>
+        <li>aaaaaa</li>
+        <li>aaaaaa</li>
+        <li>aaaaaa</li>
+        <li>aaaaaa</li>
+        <li>aaaaaa</li>
+        
+        
+    </ul>
+</body>
 </html>
